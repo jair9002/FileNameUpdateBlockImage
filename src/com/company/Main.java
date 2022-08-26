@@ -22,14 +22,16 @@ public class Main {
 
         //이것도 파일패스창 열어서 선택할수 있게 해야힐끼?
         File dir = new File("C:\\Users\\USER\\Desktop\\실사이미지 확보\\8월 8일");
-        applyFile(dir);
+        //applyFile(dir);
 
+        new NameInputFrame();
+        //new JfileChooserUtil();
     }
     public static void applyFile(File f){
         File files[] = f.listFiles();
         String fileName = new String();
 
-        
+
         for (int i = 0; i < files.length; i++) {
             fileName = files[i].toString();
 
